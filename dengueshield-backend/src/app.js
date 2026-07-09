@@ -14,4 +14,8 @@ app.get("/api/test", (req, res) => {
   });
 });
 
+const firebaseRoutes = require("./routes/firebase.routes");
+
+app.use("/api/firebase", firebaseRoutes);
+
 module.exports = app;

@@ -16,8 +16,10 @@ app.get("/api/test", (req, res) => {
 
 const firebaseRoutes = require("./routes/firebase.routes");
 const authRoutes = require("./routes/auth.routes");
+const reportRoutes = require("./routes/report.routes");
 
 app.use("/api/firebase", firebaseRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/reports", reportRoutes);
 
 module.exports = app;
